@@ -1,0 +1,71 @@
+.header{
+  height:300px;
+  @include breakpoint-down(small){
+    height:200px;
+  }
+
+  &__img{
+    background-image:url('C:/web development/todo-app-main/todo-app-main/images/bg-desktop-light.jpg');
+    width:1440px;
+    height:300px;
+
+    @include breakpoint-down(small){
+      background-image:url('C:/web development/todo-app-main/todo-app-main/images/bg-mobile-light.jpg');
+      width:100%;
+      height:200px;
+    }
+  }
+/*
+  &__imgdark{
+    background-image:url('C:/web development/todo-app-main/todo-app-main/images/bg-desktop-dark.jpg');
+    width:1440px;
+    height:300px;
+
+    @include breakpoint-down(small){
+      background-image:url('C:/web development/todo-app-main/todo-app-main/images/bg-mobile-dark.jpg');
+      width:100%;
+      height:200px;
+    }
+  }
+  */
+  &__form{
+    margin-bottom:20px;
+    padding-left:450px;
+    @include breakpoint-down(small){
+      padding-left:25px;
+      padding-right:25px;
+    }
+  }
+
+  &__input{
+    width:530px;
+    height:70px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-top: 18px;
+    outline:none;
+    border-style:hidden;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family:Josefin Sans;
+    color: lightgray;
+
+    @include breakpoint-down(small){
+      width:320px;
+      height:50px;
+      padding-top:19px;
+      font-size:12px;
+    }
+  }
+}
+.dark_mood_body_background_img {
+  background: url('C:/web development/todo-app-main/todo-app-main/images/bg-desktop-dark.jpg');
+  height: 300px;
+  transition: all 0.4s ease-in-out 0s;
+}
+.dark_mood_input{
+  border: 1px solid $VeryDarkDesaturatedBlue;
+  color: $LightGrayishBlue;
+  background:$VeryDarkGrayishBlue;
+
+}

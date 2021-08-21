@@ -1,0 +1,172 @@
+.todolist{
+  //background-color: $VeryLightGray;
+  padding-left: 450px;
+  padding-right: 450px;
+  margin-top:-40px;
+
+  @include breakpoint-down(small){
+    width:320px;
+    padding-left: 25px;
+  }
+}
+.uncheck{
+  display:inline;
+  color:$LightGrayishBlue;
+  margin-right: 40px;
+  height:16px;
+  width:16px;
+}
+/*
+.check{
+  position:absolute;
+  display:none;
+  transition: all 0.4s ease-in-out 0s;
+  margin-right: 40px;
+  height:33px;
+  width:30px;
+}
+*/
+.cross {
+  align-self: center;
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+
+.listinfo{
+  width:95%;
+  display: flex;
+  justify-content:space-around;
+  position: absolute;
+  bottom:0px;
+  font-family:Josefin Sans;
+  font-size:14px;
+
+
+  > span:first-child{
+    color:gray;
+    text-transform: lowercase;
+  }
+
+  > span:last-child{
+    color:lightgray;
+    &:hover{
+      color:black;
+    }
+  }
+
+
+
+  @include breakpoint-down(small){
+    display:none;
+  }
+}
+.all{
+  color:blue;
+}
+.active{
+  color:gray;
+  &:hover{
+    color:black;
+  }
+}
+.completed{
+  color:gray;
+  &:hover{
+    color:black;
+  }
+}
+.clear:hover{
+  color:black;
+}
+
+
+
+.card{
+  width: 530px;
+  height:439px;
+  @include breakpoint-down(small){
+    width:320px;
+    margin-top:30px;
+  }
+}
+
+
+
+.first-info{
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  position: absolute;
+  bottom:0px;
+  font-family:Josefin Sans;
+  font-size:14px;
+  color:gray;
+
+  @include breakpoint-up(large){
+    display:none;
+  }
+}
+.second-info{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-top: 15px;
+    width:320px;
+    height:50px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    font-family:Josefin Sans;
+    font-size: 12px;
+    font-weight: 700;
+    color:gray;
+
+    @include breakpoint-up(large){
+      display:none;
+    }
+  }
+p{
+  font-size:24px;
+}
+i{
+  margin-top:-20px;
+}
+.dark_mood_ul{
+  border-bottom: 1px solid $VeryDarkGrayishBlue;
+  background-color:$VeryDarkDesaturatedBlue;
+}
+
+#ul{
+  height:439px;
+}
+
+
+.dark_mood_li{
+  border-bottom: 1px solid $VeryDarkGrayishBlue;
+  background-color:$VeryDarkDesaturatedBlue;
+}
+li{
+  width:530px;
+}
+
+.line_through {
+  text-decoration: line-through;
+  color:$LightGrayishBlue;
+}
+li:hover{
+  .cross{
+    display: flex;
+  }
+}
+
+.r{
+  background-image:url("C:/web development/todo-app-main/todo-app-main/images/check.png");
+  position:absolute;
+//  display:none;
+  transition: all 0.4s ease-in-out 0s;
+  margin-right: 40px;
+  height:33px;
+  width:30px;
+}

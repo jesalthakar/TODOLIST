@@ -1,0 +1,100 @@
+html,body{
+  overflow-x: hidden;
+  list-style: none;
+}
+
+.container{
+  max-width: 542px;
+
+  &--pall{
+    padding-top: 75px;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 50px;
+
+    @include breakpoint-down(small){
+      padding-top:50px;
+      padding-left:25px;
+      padding-right:25px;
+
+    }
+  }
+}
+.flex{
+  display: flex;
+
+  &-jc-sb{
+    justify-content: space-between;
+  }
+
+  &-ai-c{
+    align-items: center;
+  }
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+#title{
+  font-size: 32px;
+  font-weight:700;
+  color:white;
+  margin:0px;
+
+  @include breakpoint-down(small){
+    font-size:24px;
+  }
+}
+
+.moon{
+  @include breakpoint-down(small){
+    width:24px;
+    height:24px;
+  }
+}
+.sun{
+  display:none;
+}
+.toggle{
+
+  .moon{
+    display:none;
+  }
+
+  .sun{
+    display: block;
+
+    @include breakpoint-down(small){
+     width:24px;
+     height:24px;
+    }
+  }
+}
+
+
+/*
+li {
+  //background-color: $VeryDarkDesaturatedBlue;
+  border-bottom: 1px solid $VeryLightGrayishBlue;
+  padding:0px;
+  width: 530px;
+
+  @include breakpoint-down(small){
+    width:320px;
+  }
+}
+*/
+.dark_mood_body_background {
+  background:$VeryDarkBlue;
+  transition: all 0.5s ease-in-out 0s;
+}
