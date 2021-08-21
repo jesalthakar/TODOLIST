@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./app/scss/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+
+  <title> Todo app</title>
+
+</head>
+<body>
+  <header class = "header no-gutters">
+    <div class ="col-sm-6">
+
+      <div class = "header__img">
+        <div class= "flex flex-jc-sb flex-jc-c flex-ai-c container--pall">
+          <h2 id="title">T O D O</h2>
+          <div class="changetheme">
+            <img class="moon" src="images/icon-moon.svg" />
+            <img class="sun" src="images/icon-sun.svg" />
+          </div>
+        </div>
+        <form class="header__form">
+          <input id="input" class="header__input" type="text" placeholder="Create a new Todo....">
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class ="todolist">
+      <div class="card">
+        <ul id="ul" class="list-group list-group-flush">
+        </ul>
+
+        <div class="listinfo" >
+          <span class = "left">no work</span>
+          <span class = "all">All</span>
+          <span class = "active">Active</span>
+          <span class = "completed">Completed</span>
+
+          <span class = "clear">Clear Completed</span>
+
+        </div>
+        <div class="mobile-list-info">
+          <div class="first-info">
+            <span class = "left">no work</span>
+            <span class = "clear">Clear Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-info">
+        <span class = "all">All</span>
+        <span class = "active">Active</span>
+        <span class = "completed">Completed</span>
+      </div>
+
+
+
+
+
+  </section>
+
+
+  <!-- Add dynamic number --> items left
+
+  All
+  Active
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+<script src="app/js/jquery-3.6.0.js"></script>
+
+<script src="app/js/card.js"></script>
+<script src="app/js/toggle.js"></script>
+<script src="app/js/dragdrop.js"></script>
+
+</body>
+</html>
